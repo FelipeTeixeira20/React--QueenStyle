@@ -11,9 +11,13 @@ function App() {
         width="1318"
         height="auto"
       />
-      <a href='https://www.pensador.com/frase/Mjc4NjQ5Mw/'>LOGIN</a>
+      <a>Jeans</a>
+      <a>Woman</a>
+      <a>Men</a>
+      <a>Kids</a>
+      <a>Sale</a>
     </header>
-    <h1>Hello</h1>
+    <h1></h1>
     </html>
   );
 }
