@@ -3,7 +3,35 @@ body{
   background-color: white;
 }
 
-a {
+/* Estilize os botões com contorno e sem preenchimento */
+.box {
+  background-color: transparent; /* Fundo transparente */
+  display: flex;
+  padding: 1px 10px;
+  margin: 10px; /* Espaçamento entre os botões */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
 
-  margin: 20px
+.categorias :hover {
+  background-color: #3498db; /* Fundo colorido ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.interacoes{
+
+  background-color: transparent; /* Fundo transparente */
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  padding: 0,75px 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.interacoes a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
 }

@@ -1,0 +1,21 @@
+/* Estilos para o slider */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Ocupa a largura total da tela */
+    height: 100vh; /* Ocupa a altura total da tela */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Estilos para as imagens no slider */
+  .slider-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Redimensiona as imagens para preencher a tela */
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  
