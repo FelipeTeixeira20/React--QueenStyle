@@ -14,22 +14,15 @@ function App() {
             height="100"
           />
         </header>
-          <div className="box">
-              <a className="box">Jeans</a>
-              <a className="box">Woman</a>
-              <a className="box">Men</a>
-              <a className="box">Kids</a>
-              <a className="box">Sale</a>
-            <div className='interacoes'>
-              <a className='interacoes'>teste</a>
-              <a className='interacoes'>teste</a>
-              <a className='interacoes'>teste</a>
-              <a className='interacoes'>teste</a>
-              <a className='interacoes'>teste</a>
-              <a className='interacoes'>teste</a>
-              <a className="interacoes">teste</a>
-            </div>
-          </div>            
+        <div className="navbar">
+      <div className="categories">
+        <span>Jeans</span>
+        <span>Feminino</span>
+        <span>Masculino</span>
+        <span>Infantil</span>
+        <span>Ofertas</span>
+      </div>
+      </div>
       </body>
     </html>
   );
