@@ -63,3 +63,21 @@ body{
   color: #690203;
   font-weight: bold;
 }
+
+/* Remover marcador de uma lista específica */
+.no-bullet {
+  list-style: none;
+}
+
+.fa.fa-search {
+  padding-left: 10px;
+}
+
+.fa.fa-heart {
+  padding-left: 10px;
+}
+
+.fa.fa-user {
+  padding-left: 10px;
+  padding-right: 20px;
+}
