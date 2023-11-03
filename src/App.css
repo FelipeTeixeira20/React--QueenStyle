@@ -1,6 +1,6 @@
 body{
 
-  background-color: white;
+  background-color: #C4C4C4;
 }
 
 /* Estilize os botões com contorno e sem preenchimento */
@@ -32,3 +32,52 @@ body{
   color: #fff; /* Cor do texto ao passar o mouse */
 }
 
+.navbar {
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex; /* Torna os itens flexíveis (lado a lado) */
+  padding: 0;
+  margin: 1px;
+}
+
+.navbar-item {
+  margin-right: 40px; /* Espaçamento entre os itens da Navbar */
+}
+
+.navbar-item:last-child {
+  margin-right: 0; /* Remove a margem do último item para evitar espaçamento extra */
+}
+
+.navbar-item a {
+  text-decoration: none;
+  font-family: system-ui;
+  color: #292828;
+}
+
+.navbar-item a:hover {
+  text-decoration: underline;
+  color: #690203;
+  font-weight: bold;
+}
+
+/* Remover marcador de uma lista específica */
+.no-bullet {
+  list-style: none;
+}
+
+.fa.fa-search {
+  padding-left: 10px;
+}
+
+.fa.fa-heart {
+  padding-left: 10px;
+}
+
+.fa.fa-user {
+  padding-left: 10px;
+  padding-right: 20px;
+}
