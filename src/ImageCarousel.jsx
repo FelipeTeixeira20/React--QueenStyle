@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 
 import 'swiper/swiper-bundle.css';
 import './ImageCarousel.css';
+import './App.css'
 
 class ImageCarousel extends React.Component {
   componentDidMount() {
@@ -24,8 +25,6 @@ class ImageCarousel extends React.Component {
     const { images } = this.props;
 
     return (
-      <div className="carousel-container">
-        <div className="carousel-wrapper">
           <div className="swiper-container">
             <div className="swiper-wrapper">
               {images.map((image, index) => (
@@ -37,8 +36,6 @@ class ImageCarousel extends React.Component {
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
           </div>
-        </div>
-      </div>
     );
   }
 }

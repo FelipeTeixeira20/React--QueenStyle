@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 # Getting Started with Create React App
 
+# Para rodar a parte de carrossel (o swiper é biblioteca JavaScript popular para criar sliders e carrosséis responsivos.)
+npm install swiper
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

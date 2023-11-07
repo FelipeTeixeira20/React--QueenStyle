@@ -7,13 +7,13 @@
   height: 100vh; /* Centralize verticalmente na página */
 }
 
-/* Estilos para o wrapper do carrossel */
-.carousel-wrapper {
-  max-width: 100%; /* Defina a largura máxima como 100% para ocupar a largura total */
-}
-
 /* Estilos para o container do carrossel */
 .swiper-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.swiper-wrapper {
   width: 100%;
 }
 
@@ -49,8 +49,4 @@
 
 .swiper-button-next {
   right: 10px;
-}
-
-.Slider {
-    margin: 15px;
 }

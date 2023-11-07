@@ -37,8 +37,8 @@ function App() {
         </div>
       </nav>
       <div className="Slider">
-      <ImageCarousel images={images} />
-    </div>
+        <ImageCarousel images={images} />
+      </div>
     </div>
     
   );
