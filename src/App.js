@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css'; // Importe os estilos do Font Awesome
-import Slider from './Slider';
+import ImageCarousel from './ImageCarousel';
 
 function App() {
+
+  const images = [
+    'https://blog.lojaquebec.com.br/wp-content/uploads/2021/04/estilos-de-roupa-masculino.jpg',
+    'https://http2.mlstatic.com/D_NQ_NP_823637-MLB54270667841_032023-O.webp',
+    '',
+  ];
   return (
     <div>
       <header>
@@ -30,7 +36,11 @@ function App() {
           </li>
         </div>
       </nav>
+      <div className="Slider">
+      <ImageCarousel images={images} />
     </div>
+    </div>
+    
   );
 }
 

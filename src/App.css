@@ -85,3 +85,60 @@ body{
   padding-left: 10px;
   padding-right: 20px;
 }
+
+/* Estilos para o container do carrossel */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centralize verticalmente na página */
+}
+
+/* Estilos para o wrapper do carrossel */
+.carousel-wrapper {
+  max-width: 100%; /* Defina a largura máxima como 100% para ocupar a largura total */
+}
+
+/* Estilos para o container do carrossel */
+.swiper-container {
+  width: 100%;
+}
+
+/* Estilos para os slides individuais do carrossel */
+.swiper-slide {
+  text-align: center;
+  background-color: #fff; /* Cor de fundo dos slides */
+}
+
+/* Estilos para as imagens dentro dos slides */
+.swiper-slide img {
+  width: 100%; /* Faça as imagens ocuparem a largura total do slide */
+  height: auto; /* Mantenha a proporção original da imagem */
+}
+
+/* Estilos para as setas de navegação */
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px; /* Largura das setas */
+  height: 30px; /* Altura das setas */
+  background-color: #333; /* Cor de fundo das setas */
+  color: #fff; /* Cor do ícone das setas */
+  border-radius: 50%; /* Borda arredondada das setas */
+  cursor: pointer;
+}
+
+/* Posicionamento das setas de navegação */
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.Slider {
+    margin: 15px;
+}
