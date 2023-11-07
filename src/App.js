@@ -26,6 +26,7 @@ function App() {
               <i className="fa fa-search"></i>
               <i className="fa fa-heart"></i>
               <i className="fa fa-user"></i>
+              <i className="fa fa-brazilian-real-sign"></i>
           </li>
         </div>
       </nav>
