@@ -32,11 +32,11 @@
 /* Estilos para as setas de navegação */
 .swiper-button-prev, .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 62%;
   transform: translateY(-50%);
   width: 30px; /* Largura das setas */
   height: 30px; /* Altura das setas */
-  background-color: #333; /* Cor de fundo das setas */
+  background-color: transparent; /* Cor de fundo das setas */
   color: #fff; /* Cor do ícone das setas */
   border-radius: 50%; /* Borda arredondada das setas */
   cursor: pointer;
