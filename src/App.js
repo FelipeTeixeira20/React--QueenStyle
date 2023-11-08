@@ -6,9 +6,9 @@ import ImageCarousel from './ImageCarousel';
 function App() {
 
   const images = [
-    'https://blog.lojaquebec.com.br/wp-content/uploads/2021/04/estilos-de-roupa-masculino.jpg',
-    'https://http2.mlstatic.com/D_NQ_NP_823637-MLB54270667841_032023-O.webp',
-    '',
+    'image/Homens.png',
+    'image/Mulheres.png',
+    'image/mulheres2.png',
   ];
   return (
     <div>
@@ -39,6 +39,20 @@ function App() {
       <div className="Slider">
         <ImageCarousel images={images} />
       </div>
+      <div className="aplicativo">
+      <div className="column">
+        <button className="button">Coleções</button>
+        <button className="button">Coleções</button>
+      </div>
+      <div className="column">
+        <button className="button">Coleções</button>
+        <button className="button">Coleções</button>
+      </div>
+      <div className="columnD">
+        <button className="buttonD">Destaques</button>
+      </div>
+
+    </div>
     </div>
     
   );
