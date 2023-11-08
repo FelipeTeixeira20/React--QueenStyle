@@ -1,8 +1,13 @@
 <<<<<<< HEAD
+
 # Getting Started with Create React App
 
 # Para rodar a parte de carrossel (o swiper é biblioteca JavaScript popular para criar sliders e carrosséis responsivos.)
+
 npm install swiper
+npm install --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -71,7 +76,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
+# This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # React--QueenStyle
->>>>>>> a725eb34c414e43c6948b1a0be5c202a49796bb0
+
+> > > > > > > a725eb34c414e43c6948b1a0be5c202a49796bb0
