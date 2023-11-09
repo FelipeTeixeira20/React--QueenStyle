@@ -1,6 +1,21 @@
-body{
+body {
+  background-color: #c4c4c4;
+}
 
-  background-color: #C4C4C4;
+.cabecalho-principal-QUEENSTYLE {
+  background: #690203;
+  margin: 0px;
+  display: flex; /* Ativa Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 95px; /* Defina uma altura para o cabeçalho se necessário */
+}
+
+.img-QUEENSTYLE-cabecalho-principal {
+  max-width: 1000px; /* Limita o tamanho do logotipo */
+  max-height: 80px; /* Pode limitar a altura do logotipo se necessário */
+  width: auto; /* Garante que a largura do logotipo seja automática e proporcional */
+  height: auto; /* Garante que a altura do logotipo seja automática e proporcional */
 }
 
 /* Estilize os botões com contorno e sem preenchimento */
@@ -78,20 +93,20 @@ body{
   flex: 1;
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .columnD {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
+.columnD {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   width: 320px;
   height: 100px;
   margin: 10px;
   padding: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000000;
   text-align: center;
   font-size: medium;
@@ -106,7 +121,7 @@ body{
   height: 220px;
   margin: 10px;
   padding: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000000;
   text-align: center;
   font-size: large;
