@@ -129,3 +129,54 @@ body{
   color: #690203;
   font-weight: bold;
 }
+
+/* Produtos */
+.loja {
+  text-align: center;
+  margin: 20px;
+}
+
+.loja h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.produto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produto h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.produto p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.produto button {
+  background-color: #333435;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #2980b9;
+}

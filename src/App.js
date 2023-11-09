@@ -3,6 +3,44 @@ import './App.css';
 import 'font-awesome/css/font-awesome.min.css'; // Importe os estilos do Font Awesome
 import ImageCarousel from './ImageCarousel';
 
+const produtos = [
+  {
+    id: 1,
+    nome: 'Camiseta Floral',
+    descricao: 'Uma linda camiseta com estampa floral.',
+    preco: 39.99,
+    imagem: 'image/estampaflorida.jpg',
+  },
+  {
+    id: 2,
+    nome: 'Calça Jeans',
+    descricao: 'Calça jeans confortável e estilosa.',
+    preco: 59.99,
+    imagem: 'image/calcajeans.jpeg',
+  },
+];
+
+const Produto = ({ produto }) => (
+  <div className="produto">
+    <img src={produto.imagem} alt={produto.nome} />
+    <h3>{produto.nome}</h3>
+    <p>{produto.descricao}</p>
+    <p>Preço: R$ {produto.preco.toFixed(2)}</p>
+    <button>Adicionar ao Carrinho</button>
+  </div>
+);
+
+const Loja = () => (
+  <div className="loja">
+    
+    <div className="produtos">
+      {produtos.map((produto) => (
+        <Produto key={produto.id} produto={produto} />
+      ))}
+    </div>
+  </div>
+);
+
 function App() {
 
   const images = [
@@ -50,6 +88,10 @@ function App() {
       </div>
       <div className="columnD">
         <button className="buttonD">Destaques</button>
+      </div>
+      
+      <div>
+        <Loja />
       </div>
 
     </div>
