@@ -157,6 +157,7 @@ ul {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .button:hover {
@@ -164,6 +165,8 @@ ul {
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
+  
 }
 
 .buttonD:hover {
@@ -171,6 +174,7 @@ ul {
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
 }
 
 /* Produtos */
@@ -195,6 +199,14 @@ ul {
   padding: 10px;
   margin: 10px;
   max-width: 200px;
+  transition: transform 0.3s ease;
+}
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto:hover img {
+  transform: scale(1.1);
 }
 
 .produto img {

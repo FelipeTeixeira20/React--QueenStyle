@@ -6,18 +6,75 @@ import ImageCarousel from "./ImageCarousel";
 const produtos = [
   {
     id: 1,
-    nome: "Camiseta Floral",
-    descricao: "Uma linda camiseta com estampa floral.",
+    nome: "CAMISETA MEOWGIC",
+    descricao: "Camiseta Regular Em Meia Malha Com Estampa Rosto de Leão Preto",
     preco: 39.99,
-    imagem: "image/estampaflorida.jpg",
+    imagem: "image/Camisa1.png",
   },
   {
     id: 2,
+    nome: "CAMISETA ROSTO DE LEÃO PRETO",
+    descricao: "Camiseta Regular Em Meia Malha Com Estampa Rosto De Leão Preto",
+    preco: 59.99,
+    imagem: "image/Camisa2.png",
+  },
+  {
+    id: 3,
+    nome: "BERMUDA ALGODÃO BEGE",
+    descricao: "Bermuda em Algodão com Cós Elástico e Bolsos Cargo",
+    preco: 89.99,
+    imagem: "image/Bermuda1.jpg",
+  },
+  {
+    id: 4,
+    nome: "CALÇA SLIM JEANS AZUL",
+    descricao: "Calça Slim Jeans Com Bolsos E Pesponto Contrastante Azul",
+    preco: 139.99,
+    imagem: "image/Calca1.jpg",
+  },
+  {
+    id: 5,
+    nome: "KIT 03 MEIAS INFANTIS ALGODÃO",
+    descricao: "Kit 03 Meias Infantis Em Algodão Com Dobra Dupla - Tam 0 A 12 Meses Preto/Cinza/Branco",
+    preco: 35.90,
+    imagem: "image/KitMeias.jpG",
+  },
+  {
+    id: 6,
     nome: "Calça Jeans",
     descricao: "Calça jeans confortável e estilosa.",
     preco: 59.99,
     imagem: "image/calcajeans.jpeg",
   },
+  {
+    id: 7,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 8,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 9,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 10,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+    
 ];
 
 const Produto = ({ produto }) => (
