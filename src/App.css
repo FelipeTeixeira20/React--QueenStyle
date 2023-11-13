@@ -145,6 +145,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .button:hover {
@@ -152,6 +153,8 @@ body {
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
+  
 }
 
 .buttonD:hover {
@@ -159,6 +162,7 @@ body {
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
 }
 
 /* Produtos */
