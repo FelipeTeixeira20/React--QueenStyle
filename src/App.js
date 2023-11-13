@@ -75,6 +75,42 @@ const produtos = [
     preco: 159.99,
     imagem: "image/CalcaF.jpg",
   },
+  {
+    id: 10,
+    nome: "CALÇA SKINNY CINTURA ALTA JEANS",
+    descricao: "Calça Skinny Cintura Alta Em Jeans Estonado Com Zíper Na Barra Preto Estonado",
+    preco: 159.99,
+    imagem: "image/CalcaF.jpg",
+  },
+  {
+    id: 10,
+    nome: "CALÇA SKINNY CINTURA ALTA JEANS",
+    descricao: "Calça Skinny Cintura Alta Em Jeans Estonado Com Zíper Na Barra Preto Estonado",
+    preco: 159.99,
+    imagem: "image/CalcaF.jpg",
+  },
+  {
+    id: 10,
+    nome: "CALÇA SKINNY CINTURA ALTA JEANS",
+    descricao: "Calça Skinny Cintura Alta Em Jeans Estonado Com Zíper Na Barra Preto Estonado",
+    preco: 159.99,
+    imagem: "image/CalcaF.jpg",
+  },
+  {
+    id: 10,
+    nome: "CALÇA SKINNY CINTURA ALTA JEANS",
+    descricao: "Calça Skinny Cintura Alta Em Jeans Estonado Com Zíper Na Barra Preto Estonado",
+    preco: 159.99,
+    imagem: "image/CalcaF.jpg",
+  },
+  {
+    id: 10,
+    nome: "CALÇA SKINNY CINTURA ALTA JEANS",
+    descricao: "Calça Skinny Cintura Alta Em Jeans Estonado Com Zíper Na Barra Preto Estonado",
+    preco: 159.99,
+    imagem: "image/CalcaF.jpg",
+  },
+  
     
 ];
 
