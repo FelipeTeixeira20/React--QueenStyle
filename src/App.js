@@ -18,6 +18,42 @@ const produtos = [
     preco: 59.99,
     imagem: "image/calcajeans.jpeg",
   },
+  {
+    id: 3,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 4,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 5,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 6,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 7,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+    
 ];
 
 const Produto = ({ produto }) => (
