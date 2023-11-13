@@ -6,17 +6,17 @@ import ImageCarousel from "./ImageCarousel";
 const produtos = [
   {
     id: 1,
-    nome: 'Camiseta Floral',
-    descricao: 'Uma linda camiseta com estampa floral.',
+    nome: "Camiseta Floral",
+    descricao: "Uma linda camiseta com estampa floral.",
     preco: 39.99,
-    imagem: 'image/estampaflorida.jpg',
+    imagem: "image/estampaflorida.jpg",
   },
   {
     id: 2,
-    nome: 'Calça Jeans',
-    descricao: 'Calça jeans confortável e estilosa.',
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
     preco: 59.99,
-    imagem: 'image/calcajeans.jpeg',
+    imagem: "image/calcajeans.jpeg",
   },
 ];
 
@@ -32,7 +32,6 @@ const Produto = ({ produto }) => (
 
 const Loja = () => (
   <div className="loja">
-    
     <div className="produtos">
       {produtos.map((produto) => (
         <Produto key={produto.id} produto={produto} />
@@ -59,16 +58,24 @@ function App() {
       <nav className="navbar">
         <ul className="navbar-list">
           <li className="navbar-item">
-            <a href="#">Feminino</a>
+            <a href="#" data-text="Feminino">
+              Feminino
+            </a>
           </li>
           <li className="navbar-item">
-            <a href="#">Masculino</a>
+            <a href="#" data-text="Masculino">
+              Masculino
+            </a>
           </li>
           <li className="navbar-item">
-            <a href="#">Infantil</a>
+            <a href="#" data-text="Infantil">
+              Infantil
+            </a>
           </li>
           <li className="navbar-item">
-            <a href="#">Promoção</a>
+            <a href="#" data-text="Promocao">
+              Promoção
+            </a>
           </li>
         </ul>
         <div className="no-bullet">
@@ -97,21 +104,9 @@ function App() {
           <button className="buttonD">Destaques</button>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-      <div className="column">
-        <button className="button">Coleções</button>
-        <button className="button">Coleções</button>
-      </div>
-      <div className="columnD">
-        <button className="buttonD">Destaques</button>
-      </div>
-      
       <div>
         <Loja />
       </div>
-
->>>>>>> a1120b617e0728fe99ee90c26063fa005052d84a
     </div>
   );
 }

@@ -1,9 +1,11 @@
 body {
-  background-color: #c4c4c4;
+  background-image: linear-gradient(360deg, #c4c4c4, #690203 50%);
 }
 
+/*Estilo do cabeçalho principal*/
 .cabecalho-principal-QUEENSTYLE {
   background: #690203;
+  border-bottom: #3d0607 solid 5px;
   margin: 0px;
   display: flex; /* Ativa Flexbox */
   justify-content: center; /* Centraliza horizontalmente */
@@ -22,52 +24,66 @@ body {
 /* Estilos para a navbar */
 .navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 15px;
   background-color: white;
-  color: black;
-  padding: 10px;
-  cursor: pointer;
-}
-.navbar {
-  background-color: #fff;
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-list {
   list-style: none;
-  display: flex; /* Torna os itens flexíveis (lado a lado) */
+  display: flex;
+  margin: 0;
   padding: 0;
-  margin: 1px;
 }
 
 .navbar-item {
-  margin-right: 40px; /* Espaçamento entre os itens da Navbar */
-}
-
-.navbar-item:last-child {
-  margin-right: 0; /* Remove a margem do último item para evitar espaçamento extra */
+  margin-right: 30px; /* Ajuste a margem conforme necessário */
 }
 
 .navbar-item a {
-  text-decoration: none;
+  color: black;
   font-family: system-ui;
-  color: #292828;
+  text-decoration: none;
+  position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+  display: inline-block; /* Para manter o layout correto */
+}
+
+.navbar-item a::after {
+  content: attr(data-text); /* Usa um atributo data-text como conteúdo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #690203; /* A cor que você deseja no hover */
+  font-weight: bold; /* Estilo bold */
+  display: none; /* Escondido inicialmente */
+  pointer-events: none; /* Para que não interfira com o evento de clique */
+}
+
+.navbar-item a:hover::after {
+  display: inline; /* Mostrar no hover */
 }
 
 .navbar-item a:hover {
-  text-decoration: underline;
-  color: #690203;
-  font-weight: bold;
+  color: transparent; /* Torna o texto original transparente para mostrar o pseudo-elemento */
 }
 
-/* Remover marcador de uma lista específica */
 .no-bullet {
-  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon input {
+  margin-right: 30px; /* Ajuste conforme necessário */
 }
 
 .fa.fa-search {
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 .fa.fa-heart {
@@ -144,8 +160,6 @@ body {
   color: #690203;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 
 /* Produtos */
 .loja {
@@ -197,4 +211,3 @@ body {
 .produto button:hover {
   background-color: #2980b9;
 }
->>>>>>> a1120b617e0728fe99ee90c26063fa005052d84a
