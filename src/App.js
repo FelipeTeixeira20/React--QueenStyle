@@ -6,10 +6,10 @@ import ImageCarousel from "./ImageCarousel";
 const produtos = [
   {
     id: 1,
-    nome: "Camiseta Floral",
-    descricao: "Uma linda camiseta com estampa floral.",
+    nome: "CAMISETA MEOWGIC",
+    descricao: "CAMISETA REGULAR EM MEIA MALHA COM ESTAMPA GATO MEOWGIC",
     preco: 39.99,
-    imagem: "image/estampaflorida.jpg",
+    imagem: "image/Camisa1.png",
   },
   {
     id: 2,
@@ -48,6 +48,27 @@ const produtos = [
   },
   {
     id: 7,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 8,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 9,
+    nome: "Calça Jeans",
+    descricao: "Calça jeans confortável e estilosa.",
+    preco: 59.99,
+    imagem: "image/calcajeans.jpeg",
+  },
+  {
+    id: 10,
     nome: "Calça Jeans",
     descricao: "Calça jeans confortável e estilosa.",
     preco: 59.99,
