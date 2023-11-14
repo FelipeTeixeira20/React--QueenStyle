@@ -157,7 +157,6 @@ ul {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 .button:hover {
@@ -166,7 +165,6 @@ ul {
   color: #690203;
   font-weight: bold;
   transform: translateY(-5px);
-  
 }
 
 .buttonD:hover {
@@ -223,7 +221,6 @@ ul {
   font-size: 14px;
   margin: 10px 0;
 }
-
 .produto button {
   background-color: #333435;
   color: #fff;

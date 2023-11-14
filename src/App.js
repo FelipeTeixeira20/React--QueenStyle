@@ -35,8 +35,9 @@ const produtos = [
   {
     id: 5,
     nome: "KIT 03 MEIAS INFANTIS ALGODÃO",
-    descricao: "Kit 03 Meias Infantis Em Algodão Com Dobra Dupla - Tam 0 A 12 Meses Preto/Cinza/Branco",
-    preco: 35.90,
+    descricao:
+      "Kit 03 Meias Infantis Em Algodão Com Dobra Dupla - Tam 0 A 12 Meses Preto/Cinza/Branco",
+    preco: 35.9,
     imagem: "image/KitMeias.jpG",
   },
   {
@@ -74,7 +75,6 @@ const produtos = [
     preco: 59.99,
     imagem: "image/calcajeans.jpeg",
   },
-    
 ];
 
 const Produto = ({ produto }) => (
@@ -130,7 +130,7 @@ function App() {
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#" data-text="Promocao">
+            <a href="#" data-text="Promoção">
               Promoção
             </a>
           </li>
