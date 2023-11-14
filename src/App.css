@@ -56,6 +56,7 @@ ul {
 .navbar-item a {
   color: black;
   font-family: system-ui;
+  cursor: pointer;
   text-decoration: none;
   position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
   display: inline-block; /* Para manter o layout correto */
@@ -193,13 +194,18 @@ ul {
 }
 
 .produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #a9a9a9;
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
   max-width: 200px;
+  min-height: 400px; /* Exemplo de altura mínima, ajuste conforme necessário */
   transition: transform 0.3s ease;
 }
+
 .produto:hover {
   transform: translateY(-5px);
 }
@@ -232,4 +238,11 @@ ul {
 
 .produto button:hover {
   background-color: #2980b9;
+}
+
+.titulo-secao {
+  font-size: 24px;
+  color: #690203; /* Cor do texto */
+  margin: 20px 0; /* Espaçamento antes e depois do título */
+  text-align: center; /* Centraliza o título */
 }
