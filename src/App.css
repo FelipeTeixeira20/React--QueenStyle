@@ -1,58 +1,101 @@
-body{
+body {
+  /*background-image: linear-gradient(360deg, #c4c4c4, #690203 50%);*/
+  background: #faf6ed;
+  margin: 0px;
+  padding: 0px;
+}
 
-  background-color: #C4C4C4;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Estilo do cabeçalho principal*/
+.cabecalho-principal-QUEENSTYLE {
+  background: #690203;
+  border-bottom: #3d0607 solid 5px;
+  margin: 0px;
+  display: flex; /* Ativa Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 95px; /* Defina uma altura para o cabeçalho se necessário */
+}
+
+.img-QUEENSTYLE-cabecalho-principal {
+  max-width: 1000px; /* Limita o tamanho do logotipo */
+  max-height: 80px; /* Pode limitar a altura do logotipo se necessário */
+  width: auto; /* Garante que a largura do logotipo seja automática e proporcional */
+  height: auto; /* Garante que a altura do logotipo seja automática e proporcional */
 }
 
 /* Estilize os botões com contorno e sem preenchimento */
 /* Estilos para a navbar */
 .navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 15px;
   background-color: white;
-  color: black;
-  padding: 10px;
-  cursor: pointer;
-}
-.navbar {
-  background-color: #fff;
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-list {
   list-style: none;
-  display: flex; /* Torna os itens flexíveis (lado a lado) */
+  display: flex;
+  margin: 0;
   padding: 0;
-  margin: 1px;
 }
 
 .navbar-item {
-  margin-right: 40px; /* Espaçamento entre os itens da Navbar */
-}
-
-.navbar-item:last-child {
-  margin-right: 0; /* Remove a margem do último item para evitar espaçamento extra */
+  margin-right: 30px; /* Ajuste a margem conforme necessário */
 }
 
 .navbar-item a {
-  text-decoration: none;
+  color: black;
   font-family: system-ui;
-  color: #292828;
+  text-decoration: none;
+  position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+  display: inline-block; /* Para manter o layout correto */
+}
+
+.navbar-item a::after {
+  content: attr(data-text); /* Usa um atributo data-text como conteúdo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #690203; /* A cor que você deseja no hover */
+  font-weight: bold; /* Estilo bold */
+  display: none; /* Escondido inicialmente */
+  pointer-events: none; /* Para que não interfira com o evento de clique */
+}
+
+.navbar-item a:hover::after {
+  display: inline; /* Mostrar no hover */
 }
 
 .navbar-item a:hover {
-  text-decoration: underline;
-  color: #690203;
-  font-weight: bold;
+  color: transparent; /* Torna o texto original transparente para mostrar o pseudo-elemento */
 }
 
-/* Remover marcador de uma lista específica */
 .no-bullet {
-  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon input {
+  margin-right: 30px; /* Ajuste conforme necessário */
 }
 
 .fa.fa-search {
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 .fa.fa-heart {
@@ -78,20 +121,20 @@ body{
   flex: 1;
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .columnD {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
+.columnD {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   width: 320px;
   height: 100px;
   margin: 10px;
   padding: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000000;
   text-align: center;
   font-size: medium;
@@ -106,7 +149,7 @@ body{
   height: 220px;
   margin: 10px;
   padding: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000000;
   text-align: center;
   font-size: large;
@@ -114,6 +157,7 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .button:hover {
@@ -121,6 +165,8 @@ body{
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
+  
 }
 
 .buttonD:hover {
@@ -128,4 +174,65 @@ body{
   text-decoration: underline;
   color: #690203;
   font-weight: bold;
+  transform: translateY(-5px);
+}
+
+/* Produtos */
+.loja {
+  text-align: center;
+  margin: 20px;
+}
+
+.loja h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.produto {
+  background-color: #a9a9a9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto:hover img {
+  transform: scale(1.1);
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produto h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.produto p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.produto button {
+  background-color: #333435;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #2980b9;
 }
