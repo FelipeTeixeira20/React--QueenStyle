@@ -1,6 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   /*background-image: linear-gradient(360deg, #c4c4c4, #690203 50%);*/
-  background: #faf6ed;
+  background: linear-gradient(-45deg, #9b1112, #c4a35a, #9b1112, #c4a35a);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
   margin: 0px;
   padding: 0px;
 }
@@ -197,26 +212,32 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #a9a9a9;
+  background-color: #f7f0e6; /* Cor de fundo mais clara para contraste com o fundo */
+  color: #690203; /* Cor do texto */
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
   max-width: 200px;
   min-height: 400px; /* Exemplo de altura mínima, ajuste conforme necessário */
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Impede que o conteúdo ultrapasse os limites do container */
 }
 
 .produto:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+  transform: translateY(-3px); /* Movimento sutil para cima */
 }
 
 .produto:hover img {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
 }
 
 .produto img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px; /* Bordas arredondadas nas imagens */
 }
 
 .produto h3 {
@@ -229,20 +250,28 @@ ul {
   margin: 10px 0;
 }
 .produto button {
-  background-color: #333435;
-  color: #fff;
+  background-color: #c4a35a; /* Botão com cor dourada */
+  color: #690203; /* Cor do texto do botão */
   border: none;
   padding: 8px;
   cursor: pointer;
 }
 
 .produto button:hover {
-  background-color: #2980b9;
+  background-color: #9b1112; /* Cor de hover do botão */
+  color: #fff; /* Texto do botão em hover */
 }
 
 .titulo-secao {
-  font-size: 24px;
-  color: #690203; /* Cor do texto */
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  color: #ffffff; /* Cor do texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
   margin: 20px 0; /* Espaçamento antes e depois do título */
   text-align: center; /* Centraliza o título */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  padding: 10px;
+  width: 100%; /* Usa toda a largura disponível */
+  box-sizing: border-box; /* Garante que padding não adicione largura extra */
+  border-radius: 10px;
 }

@@ -203,6 +203,7 @@ function App() {
   };
   return (
     <div>
+      <div class="floating-lines"></div>
       <header className="cabecalho-principal-QUEENSTYLE">
         <img
           className="img-QUEENSTYLE-cabecalho-principal"
