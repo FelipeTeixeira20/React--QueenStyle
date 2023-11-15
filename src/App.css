@@ -112,14 +112,17 @@ ul {
 
 .fa.fa-search {
   padding-left: 0px;
+  cursor: pointer;
 }
 
 .fa.fa-heart {
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .fa.fa-user {
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .fa.fa-coins {

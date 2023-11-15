@@ -146,47 +146,10 @@ const Produto = ({ produto }) => (
   </div>
 );
 
-const Loja = () => (
-  <div className="loja">
-    {/* Seção Masculino */}
-    <h2 id="Masculino" className="titulo-secao">
-      Masculino
-    </h2>
-    <div className="produtos">
-      {produtos
-        .filter((produto) => produto.categoria === "Masculino")
-        .map((produto) => (
-          <Produto key={produto.id} produto={produto} />
-        ))}
-    </div>
-
-    {/* Seção Feminino */}
-    <h2 id="Feminino" className="titulo-secao">
-      Feminino
-    </h2>
-    <div className="produtos">
-      {produtos
-        .filter((produto) => produto.categoria === "Feminino")
-        .map((produto) => (
-          <Produto key={produto.id} produto={produto} />
-        ))}
-    </div>
-
-    {/* Seção Infantil */}
-    <h2 id="Infantil" className="titulo-secao">
-      Infantil
-    </h2>
-    <div className="produtos">
-      {produtos
-        .filter((produto) => produto.categoria === "Infantil")
-        .map((produto) => (
-          <Produto key={produto.id} produto={produto} />
-        ))}
-    </div>
-  </div>
-);
-
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchCategory, setSearchCategory] = useState('');
   const images = [
     "image/Homens.png",
     "image/Mulheres.png",
@@ -201,6 +164,91 @@ function App() {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleSearchInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearch = () => {
+    // Realize a busca nos produtos com base no termo inserido
+    const results = produtos.filter(
+      (produto) =>
+        produto.nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        produto.descricao.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  
+    // Armazene os resultados e a categoria do primeiro item encontrado
+    setSearchResults(results);
+    setSearchCategory(results.length > 0 ? results[0].categoria : '');
+  };
+  
+  
+  const Loja = () => (
+    <div className="loja">
+      {/* Seção Masculino */}
+      <div>
+        <h2 id="Masculino" className="titulo-secao">
+          Masculino
+        </h2>
+        <div className="produtos">
+          {searchTerm
+            ? searchResults
+                .filter((produto) => produto.categoria === 'Masculino')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))
+            : produtos
+                .filter((produto) => produto.categoria === 'Masculino')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))}
+        </div>
+      </div>
+  
+      {/* Seção Feminino */}
+      <div>
+        <h2 id="Feminino" className="titulo-secao">
+          Feminino
+        </h2>
+        <div className="produtos">
+          {searchTerm
+            ? searchResults
+                .filter((produto) => produto.categoria === 'Feminino')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))
+            : produtos
+                .filter((produto) => produto.categoria === 'Feminino')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))}
+        </div>
+      </div>
+  
+      {/* Seção Infantil */}
+      <div>
+        <h2 id="Infantil" className="titulo-secao">
+          Infantil
+        </h2>
+        <div className="produtos">
+          {searchTerm
+            ? searchResults
+                .filter((produto) => produto.categoria === 'Infantil')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))
+            : produtos
+                .filter((produto) => produto.categoria === 'Infantil')
+                .map((produto) => (
+                  <Produto key={produto.id} produto={produto} />
+                ))}
+        </div>
+      </div>
+  
+      {/* ... restante do código */}
+    </div>
+  );
+  
+  
   return (
     <div>
       <div class="floating-lines"></div>
@@ -247,8 +295,8 @@ function App() {
         </ul>
         <div className="no-bullet">
           <li className="navbar-item search-icon">
-            <input type="text" placeholder="Pesquisar..." />
-            <i className="fa fa-search"></i>
+            <input type="text" placeholder="Pesquisar..." value={searchTerm} onChange={handleSearchInputChange}/>    
+            <i className="fa fa-search" onClick={handleSearch}></i>
             <i className="fa fa-heart"></i>
             <i className="fa fa-user"></i>
             <i className="fa fa-brazilian-real-sign"></i>
